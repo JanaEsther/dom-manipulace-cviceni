@@ -1,1 +1,1 @@
-# dom-manipulace-cviceni
+# Cvičení: Manipulace s DOM elementy
