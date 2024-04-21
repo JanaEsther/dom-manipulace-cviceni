@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<script type="module" src="script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JavaScript a DOM</h1>
 
-	<h1>JavaScript a DOM</h1>
+    <p>
+      Učíme se manipulovat s obsahem stránky. K tomu se používá divná a tajemná
+      věc, které se říká DOM (Document Object Model). Pomocí ní můžeš ke všem
+      prvkům na stránce přistupovat jako k objektům a měnit jejich vlastnosti.
+    </p>
 
-	<p>Učíme se manipulovat s obsahem stránky. K tomu se používá divná a tajemná věc, které se říká DOM (Document Object Model). Pomocí ní můžeš ke všem prvkům na stránce přistupovat jako k objektům a měnit jejich vlastnosti.</p>
+    <p>
+      Prvek, se kterým chceš v JavaScriptu pracovat musíš nejprve v DOMu vybrat.
+      To provedeš pomocí metody document.querySelector nebo jiné podobné.
+    </p>
 
-	<p>Prvek, se kterým chceš v JavaScriptu pracovat musíš nejprve v DOMu vybrat. To provedeš pomocí metody document.querySelector nebo jiné podobné.</p>
+    <p>
+      Jakmile máš prvek vybraný a uložený do proměnné, můžeš mu přímo nastavovat
+      a měnit CSS vlastnosti, přidávat nebo odebírat CSS třídy, měnit atributy
+      nebo jeho textový obsah.
+    </p>
 
-	<p>Jakmile máš prvek vybraný a uložený do proměnné, můžeš mu přímo nastavovat a měnit CSS vlastnosti, přidávat nebo odebírat CSS třídy, měnit atributy nebo jeho textový obsah.</p>
+    <img src="images/kocka.jpg" alt="Zvíře neurčitého typu" />
 
-	<img src="images/kocka.jpg" alt="Zvíře neurčitého typu">
+    <div class="ctverecek">Čtvereček</div>
 
-	<div class="ctverecek">Čtvereček</div>
+    <div class="kolecko">Kolečko</div>
 
-	<div class="kolecko">Kolečko</div>
+    <button class="tlacitko">Tlačítko</button>
 
-	<button class="tlacitko">Tlačítko</button>
+    <div id="galerie">
+      <button id="zpet">◄</button>
+      <img src="images/kocka.jpg" alt="Zvíře neurčitého typu" />
+      <button id="vpred">►</button>
+    </div>
 
-	<div class="napoveda">
+    <div class="napoveda">
+      <h2>Nápověda</h2>
 
-		<h2>Nápověda</h2>
-
-		<ul>
-			<li>V HTML přidám k elementu atribut <strong>class</strong> nebo <strong>id</strong>, nebo se  budu vybírat elementy jen podle HTML značek, ale pak ponesu následky!</li>
-			<li>V JavaScriptu najdu daný HTML element pomocí <strong>document.querySelector(".class")</strong> nebo <strong>document.querySelector("#id")</strong> a uložím si ho do proměnné, se kterou budu nadále pracovat</li>
-			<li>HTML atributy nalezeného prvku změním pomocí <strong><em>prvek</em>.<em>attribut</em> = 'hodnota'</strong></li>
-			<li>CSS vlastnosti nalezeného prvku změním pomocí <strong><em>prvek</em>.style.<em>cssVlastnost</em> = 'hodnota'</strong></li>
-			<li>Vzpomenu si, jak se jmenují CSS vlastnosti pro barvu, písmo, atd. Víceslovné názvy vlastností (ty s pomlčkou) přepíšu v JavaScriptu do tzv. camelCase. Např. z <em>background-color</em> v CSS udělám v JavaScriptu <em>backgroundColor</em>.</li>
-		</ul>
-	</div>
-
-</body>
+      <ul>
+        <li>
+          V HTML přidám k elementu atribut <strong>class</strong> nebo
+          <strong>id</strong>, nebo se budu vybírat elementy jen podle HTML
+          značek, ale pak ponesu následky!
+        </li>
+        <li>
+          V JavaScriptu najdu daný HTML element pomocí
+          <strong>document.querySelector(".class")</strong> nebo
+          <strong>document.querySelector("#id")</strong> a uložím si ho do
+          proměnné, se kterou budu nadále pracovat
+        </li>
+        <li>
+          HTML atributy nalezeného prvku změním pomocí
+          <strong><em>prvek</em>.<em>attribut</em> = 'hodnota'</strong>
+        </li>
+        <li>
+          CSS vlastnosti nalezeného prvku změním pomocí
+          <strong
+            ><em>prvek</em>.style.<em>cssVlastnost</em> = 'hodnota'</strong
+          >
+        </li>
+        <li>
+          Vzpomenu si, jak se jmenují CSS vlastnosti pro barvu, písmo, atd.
+          Víceslovné názvy vlastností (ty s pomlčkou) přepíšu v JavaScriptu do
+          tzv. camelCase. Např. z <em>background-color</em> v CSS udělám v
+          JavaScriptu <em>backgroundColor</em>.
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
